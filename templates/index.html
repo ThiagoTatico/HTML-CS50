@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Home Page</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="/static/styles.css" rel="stylesheet">
+        <title>My Webpage</title>
+        
+        <script language="JavaScript">
+
+            // This script and many more are available free online at
+            //-- The JavaScript Source!! http://javascript.internet.com
+
+            var Today=new Date();
+            var ThisDay=Today.getDay();
+            var ThisDate=Today.getDate();
+            var ThisMonth=Today.getMonth()+1;
+            var ThisYear=Today.getFullYear();  //included if you wish to insert the year
+            function DayTxt (DayNumber) {
+            var Day=new Array();
+            Day[0]="Sunday";
+            Day[1]="Monday";
+            Day[2]="Tuesday";
+            Day[3]="Wednesday";
+            Day[4]="Thursday";
+            Day[5]="Friday";
+            Day[6]="Saturday";
+            return Day[DayNumber];
+            }
+            var DayName=DayTxt(ThisDay);
+            function MonthTxt (MonthNumber) {
+            var Month=new Array();
+            Month[1]="January";
+            Month[2]="February";
+            Month[3]="March";
+            Month[4]="April";
+            Month[5]="May";
+            Month[6]="June";
+            Month[7]="July";
+            Month[8]="August";
+            Month[9]="September";
+            Month[10]="October";
+            Month[11]="November";
+            Month[12]="December";
+            return Month[MonthNumber];
+            }
+            var MonthName=MonthTxt(ThisMonth);
+            var d = new Date();
+            var h = d.getHours();
+            document.write("<TABLE BORDER=3 BGCOLOR=WHITE  WIDTH=75 HEIGHT=85 align=left>"+"<TD>"+"<p align=center>"+"<font size=-2 >"+DayName+"<br>"+"<font color=orangered size=+3 >"+ThisDate+"</font>"+"<br>"+MonthName+"<br>"+"</b>"+"</font>"+"</p>"+"</TD>"+"</TR>"+"</TABLE>");
+            if (h < 2) document.write("<P ALIGN=center>"+"<b>"+"Good morning! Yes, it's way past midnight."+"</b>"+"</P>");
+            else if (h < 3) document.write("<P ALIGN=center>"+"<b>"+"Good morning! Up early or working late?"+"</b>"+"</P>");
+            else if (h < 7) document.write("<P ALIGN=center>"+"<b>"+"Good morning! Up bright and early!"+"</b>"+"</P>");
+            else if (h < 12) document.write("<P ALIGN=center>"+"<b>"+"Good morning!"+"</b>"+"</P>");
+            else if (h < 17) document.write("<P ALIGN=center>"+"<b>"+"Good afternoon!"+"</b>"+"</P>");
+            else if (h < 23) document.write("<P ALIGN=center>"+"<b>"+"Good evening!"+"</b>"+"</P>");
+            else document.write("<P ALIGN=center>"+"<b>"+"A late good evening! Not much left of it now."+"</b>"+"</P>");
+            //  End -->
+        </script>
+        
+    </head>
+    
+    <body>
+        
+        <header>
+            <img src="/images/coffee.jpg" class="img-fluid" alt="Responsive image">
+            
+            <div class="textCent">
+                <h1>Hi there!</h1>
+            </div>
+            
+            <h>
+        </header>
+        
+        <hr>
+            
+        <main>
+            
+            <div class="container-md">
+                
+                <font>
+                
+                <h2>Site Sections:</h2>
+                
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <button onclick="location.href='/templates/CS50.html';" type="button" class="btn btn-secondary">About CS50</button>
+                    <button onclick="location.href='/templates/game.html';" type="button" class="btn btn-secondary">Favorite Game</button>
+                    <button onclick="location.href='/templates/ded.html';" type="button" class="btn btn-secondary">My D&D Character</button>
+                </div>
+                
+                </font>
+                
+            </div>
+            
+            <hr>
+            
+            <div class="container-md">
+                <font>
+                    
+                <h2>Description about Thiago Tatico:</h2>
+                <p>At the moment I am building this site I am finishing CS50 and planning to continue in the programming world.</p>
+                <p>I think I'll go to the WEB programming branch, but it can change as time goes by.</p>
+                <p>I'm interested in AI, Data Science, Backending, Machine learning and other various technologies in the area.</p>
+                
+                </font>
+            </div>
+
+            <hr>
+            
+            <div class="container-md">
+                <font>
+                
+                <h2>Things I do in my free time:</h2>
+                <p>I really enjoy watching anime, playing tabletop or online RPG, being FFXIV online, I read mangas or books.</p>
+                <p>I also enjoy programming, which I am currently studying and improving. Besides loving to cook.</p>
+                
+                </font>
+            </div>
+            
+            <hr>
+            
+            <div class="container-md">
+                
+                <div class="card-deck">
+                    <div class="card">
+                        <img width="335" height="335"src="/images/anime.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Anime Recommendations</h5>
+                            <p class="card-text">A short list of great animes</p>
+                            <a href="https://myanimelist.net/animelist/AriunKraster?status=7&order=4&order2=0" class="btn btn-primary">Go</a>
+                        </div>
+                        <div class="card-footer">
+                            <small class="text-muted">My Anime List</small>
+                        </div>
+                </div>
+                <div class="card">
+                    <img width="335" height="335" src="/images/linked.png" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Linkedin</h5>
+                        <p class="card-text">My Linkedin page</p>
+                        <a href="https://www.linkedin.com/in/thiago-tatico-0b9057216/" class="btn btn-primary">Go</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Linkedin</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img width="380" height="335" src="/images/japan.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title">Youtube channel recommendation</h5>
+                        <p class="card-text">Videos of hiking in japan to relax</p>
+                        <a href="https://www.youtube.com/c/Rambalac" class="btn btn-primary">Go</a>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Youtube</small>
+                    </div>
+                </div>
+                
+                </div>
+                
+            </div>
+            
+        </main>
+        
+        <footer>
+            
+            <nav class="navbar navbar-light bg-dark">
+              <a class="navbar-brand" href="https://github.com/ThiagoTatico">
+              <img src="/images/github.png" width="35" height="35" loading="lazy">
+              </a>
+            </nav>
+            
+        </footer>
+        
+    </body>
+    
+</html>
